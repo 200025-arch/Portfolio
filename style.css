@@ -830,3 +830,155 @@ body{
     font-size:1.7rem;
   }
 }
+
+/* ================================================= */
+/* ===== PAGE PROJET – VISION+ ===================== */
+/* ================================================= */
+
+.project-detail-section{
+  max-width:1200px;
+  margin:0 auto;
+  padding:100px 30px 140px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+/* ---------- CARTE PRINCIPALE ---------- */
+
+.project-detail-card{
+  width:100%;
+  max-width:900px;
+
+  background:linear-gradient(
+    160deg,
+    rgba(255,255,255,0.06),
+    rgba(255,255,255,0.015)
+  );
+
+  border-radius:28px;
+  padding:50px 50px 60px;
+  box-shadow:
+    0 0 0 1px rgba(241,183,42,0.25),
+    0 30px 80px rgba(0,0,0,0.6);
+
+  position:relative;
+  backdrop-filter:blur(16px);
+}
+
+/* ---------- TITRE ---------- */
+
+.project-title{
+  text-align:center;
+  font-size:1.7rem;
+  color:var(--accent);
+  margin-bottom:35px;
+}
+
+/* ---------- IMAGE DASHBOARD ---------- */
+
+.project-detail-img{
+  width:100%;
+  max-width:720px;
+  display:block;
+  margin:0 auto 40px;
+
+  border-radius:18px;
+  background:#fff;
+  padding:14px;
+
+  box-shadow:
+    0 15px 45px rgba(0,0,0,0.55),
+    inset 0 0 0 1px rgba(0,0,0,0.1);
+}
+
+/* ---------- DESCRIPTION ---------- */
+
+.project-description{
+  font-size:0.95rem;
+  line-height:1.7;
+  color:var(--text);
+}
+
+/* Espacement entre blocs */
+.project-description p{
+  margin-bottom:22px;
+}
+
+/* Titres dorés */
+.project-description .gold{
+  color:var(--accent);
+  font-weight:600;
+}
+
+/* ---------- BOUTON GITHUB ---------- */
+
+.github-button{
+  display:inline-block;
+  margin-top:25px;
+
+  background:linear-gradient(
+    135deg,
+    #f1b72a,
+    #ffcc55
+  );
+
+  color:#111;
+  padding:12px 26px;
+  border-radius:999px;
+  font-size:0.9rem;
+  font-weight:600;
+  text-decoration:none;
+
+  box-shadow:
+    0 8px 25px rgba(241,183,42,0.45);
+
+  transition:transform .3s ease, box-shadow .3s ease;
+}
+
+.github-button:hover{
+  transform:translateY(-3px);
+  box-shadow:
+    0 12px 35px rgba(241,183,42,0.6);
+}
+
+/* ---------- LIEN RETOUR ---------- */
+
+.back-link{
+  margin-top:45px;
+}
+
+.back-link a{
+  color:var(--accent);
+  font-size:0.9rem;
+  text-decoration:none;
+  opacity:0.9;
+}
+
+.back-link a:hover{
+  text-decoration:underline;
+  opacity:1;
+}
+
+/* ================================================= */
+/* ===== RESPONSIVE ================================ */
+/* ================================================= */
+
+@media(max-width:900px){
+
+  .project-detail-card{
+    padding:35px 28px 45px;
+  }
+
+  .project-title{
+    font-size:1.4rem;
+  }
+
+  .project-detail-img{
+    padding:10px;
+  }
+
+  .project-description{
+    font-size:0.9rem;
+  }
+}

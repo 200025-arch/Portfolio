@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SQL Server - Data Warehouse Analyse-ventes</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+<!-- === HEADER UNIFIÉ === -->
+<section class="header-apropos index-header">
+  <img src="images/ba.jpg" class="banniere-img" alt="Bannière Data">
+  <div class="banniere-contenu">
+    <h1>SQL Server - Data Warehouse Analyses ventes</h1>
+    <p>Suivi stratégique des retours, pertes et actions correctives.</p>
+  </div>
+
+  <nav class="navbar-apropos-bas">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="Projets_global.html">Projets</a></li>
+      <li><a href="automatisations.html">Apps & Automatisations</a></li>
+      <li><a href="a-propos.html">À propos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</section>
+
+<!-- === CONTENU PRINCIPAL === -->
+<main class="project-detail-section">
+
+  <div class="project-detail-card">
+
+    <h2 class="project-title">SQL Server - Data Warehouse Analyses ventes</h2>
+
+    <img src="Images/DWH_Analyse_Ventes.png" 
+         alt="Dashboard Retour Produits" 
+         class="project-detail-img">
+
+    <div class="project-description">
+
+      <p>
+        <strong class="gold">🎯 Objectif :</strong><br><br>
+        Ce projet consiste à concevoir et implémenter un Data Warehouse de ventes en SQL Server,
+         en suivant une architecture Medallion (Bronze / Silver / Gold). 
+         L’objectif est de transformer des données de ventes brutes (CSV) en données structurées, nettoyées et prêtes 
+        pour l’analyse, afin de faciliter la création de tableaux de bord et d’analyses business.
+      </p>
+
+     <p>
+        <strong class="gold">🚀 Architecture DATA :</strong><br><br>
+        L’architecture des données de ce projet suit le modèle Medallion avec les couches Bronze, Silver et Gold :
+        
+          <ol>
+            <li><strong>Couche Bronze : </strong> Stocke les données brutes telles qu’elles proviennent des systèmes sources. 
+              Les données sont ingérées à partir de fichiers CSV dans une base de données SQL Server.</li>
+
+            <br>
+
+              <li><strong>Couche Sliver : </strong> Cette couche inclut les processus de nettoyage, de standardisation et 
+              de normalisation des données afin de les préparer pour l’analyse.</li>
+
+            <br>
+
+            <li><strong>Couche Gold : </strong> Contient les données prêtes pour l’entreprise, modélisées sous forme de schéma en étoile, 
+              nécessaires pour les rapports et l’analytique.</li>
+          </ol>
+        
+      </p>
+
+      <p>
+        <strong class="gold">🚀 Prérequis du projet :</strong><br><br>
+       
+
+        <ol>
+          <li><strong>Spécifications Sources de données :</strong> Importer les données à partir d'un 
+            système source (ERP) fournis sous forme de fichiers CSV.</li>
+          <br>
+
+          <li><strong>Qualité des données :</strong> Nettoyer et résoudre les problèmes de qualité des données avant l’analyse.</li>
+          <br>
+
+          <li><strong>Intégration :</strong> À partir d’un fichier source unique, concevoir et structurer 
+            plusieurs tables de dimensions ainsi qu’une table de faits pour former un modèle analytique optimisé.</li>
+          <br>
+
+          <li><strong>Périmètre :</strong> Se concentrer uniquement sur le 
+            jeu de données le plus récent ; l’historisation des données n’est pas requise.</li>
+          <br>
+
+          <li><strong>Documentation : </strong>Fournir une documentation claire du modèle de données pour soutenir à la fois 
+            les parties prenantes métier et les équipes analytiques.</li>
+        </ol>
+
+      </p>
+
+      <p>
+        <strong class="gold">🛠️ Outils & Compétences :</strong><br>
+        SQL Server, Draw.io, Github, Notion, Excel
+      </p>
+
+      <a href="https://github.com/200025-arch/SQL-Data-Warehouse-Analyse-ventes"
+         target="_blank"
+         class="github-button">
+        🔗 Plus de détails sur le projet - Github
+      </a>
+    </div>
+
+  </div>
+
+  <div class="back-link">
+    <a href="Projets_global.html">⬅️ Retour aux projets</a>
+  </div>
+
+</main>
+
+</body>
+</html>
